@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ChromaKey_Unlit_Cutout
+  m_Shader: {fileID: 4800000, guid: ddd94aad04b8ef24798d652cf523db41, type: 3}
+  m_ShaderKeywords: _CULL_BACK _ZWRITE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: d9e3607ccfc8cda47bdefe4d1a84894c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BlendDst: 10
+    - _BlendSrc: 5
+    - _BrightnessMax: 1
+    - _BrightnessMin: 0.198
+    - _ChromaKeyBrightnessRange: 0.5
+    - _ChromaKeyHueRange: 0.1
+    - _ChromaKeySaturationRange: 0.5
+    - _Cull: 2
+    - _Delta: 0.00001
+    - _DstBlend: 10
+    - _H: 0
+    - _HueMax: 0.69
+    - _HueMin: 0.65
+    - _S: 1
+    - _SaturationMax: 1
+    - _SaturationMin: 0.3
+    - _SrcBlend: 5
+    - _V: 1
+    - _ZWrite: 1
+    m_Colors:
+    - _ChromaKeyColor: {r: 1, g: 0, b: 1, a: 0}
+    - _ChromaKeyRange: {r: 0.06, g: 0.7, b: 0.8, a: 1}
