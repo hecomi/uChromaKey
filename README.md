@@ -7,7 +7,7 @@ uChromaKey
 
 Screenshots
 ------------
-<img src="https://raw.githubusercontent.com/wiki/hecomi/uChromaKey/image.gif" width="720" /><br />
+<img src="https://raw.githubusercontent.com/wiki/hecomi/uChromaKey/image.png" width="720" /><br />
 
 License
 -------
