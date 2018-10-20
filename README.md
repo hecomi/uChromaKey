@@ -1,6 +1,5 @@
 uChromaKey
 ==========
-
 ![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)
 
 **uChromaKey** is a simple shader asset to use a chroma key effect in Unity.
@@ -8,6 +7,7 @@ uChromaKey
 Screenshots
 ------------
 <img src="https://raw.githubusercontent.com/wiki/hecomi/uChromaKey/image.png" width="720" /><br />
+<img src="https://raw.githubusercontent.com/wiki/hecomi/uChromaKey/dog.gif" width="720" /><br />
 
 License
 -------
