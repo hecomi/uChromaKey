@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: ChromaKey_Unlit_Transparent_Shadow
-  m_Shader: {fileID: 4800000, guid: 005e1979bda824d4caa99997c7f53f1a, type: 3}
-  m_ShaderKeywords: _CULL_BACK _ZWRITE_ON
+  m_Name: ChromaKey_Standard_Transparent
+  m_Shader: {fileID: 4800000, guid: a3f1deeeb6cf09043835f48c1b142978, type: 3}
+  m_ShaderKeywords: _ZWRITE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -23,13 +23,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BlendDst: 10
-    - _BlendSrc: 5
     - _ChromaKeyBrightnessRange: 0.5
     - _ChromaKeyHueRange: 0.1
     - _ChromaKeySaturationRange: 0.5
     - _Cull: 0
+    - _Cutoff: 0.5
+    - _Glossiness: 1
+    - _Metallic: 0
     - _ZWrite: 1
     m_Colors:
-    - _ChromaKeyColor: {r: 0.991107, g: 0, b: 1, a: 0}
-    - _ChromaKeyRange: {r: 0.06, g: 0.5, b: 0.9, a: 1}
+    - _ChromaKeyColor: {r: 1, g: 0, b: 1, a: 0}
+    - _ChromaKeyRange: {r: 0.06, g: 0.6, b: 0.8, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}

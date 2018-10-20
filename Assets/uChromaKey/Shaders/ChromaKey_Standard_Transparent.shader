@@ -1,4 +1,4 @@
-﻿Shader "ChromaKey/Standard/Cutout" 
+﻿Shader "ChromaKey/Standard/Transparent" 
 {
 
 Properties 
@@ -21,18 +21,35 @@ SubShader
 {
     Tags 
     { 
-        "Queue" = "AlphaTest"
-        "RenderType" = "TransparentCutout" 
+        "Queue" = "Transparent"
+        "RenderType" = "Transparent" 
+        "IgnoreProjector" = "True" 
         "PreviewType" = "Plane"
     }
 
     Cull [_Cull]
 
     CGPROGRAM
-    #pragma surface surf Standard addshadow fullforwardshadows
+    #pragma surface surf Standard alpha:blend addshadow fullforwardshadows
     #pragma target 3.0
+    #define CHROMA_KEY_ALPHA
     #include "./ChromaKey_Standard.cginc"
     ENDCG
+
+    Pass
+    {
+        Tags { "LightMode" = "ShadowCaster" }
+        ZWrite On 
+        ZTest LEqual 
+        Cull Off
+
+        CGPROGRAM
+        #include "./Chromakey_Shadow.cginc"
+        #pragma vertex vert
+        #pragma fragment frag
+        #pragma multi_compilecaster
+        ENDCG
+    }
 }
 
 FallBack "Diffuse"

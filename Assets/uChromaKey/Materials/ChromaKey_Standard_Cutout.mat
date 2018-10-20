@@ -26,8 +26,9 @@ Material:
     - _ChromaKeyBrightnessRange: 0.5
     - _ChromaKeyHueRange: 0.1
     - _ChromaKeySaturationRange: 0.5
-    - _Glossiness: 0
-    - _Metallic: 0.311
+    - _Cull: 0
+    - _Glossiness: 1
+    - _Metallic: 1
     m_Colors:
     - _ChromaKeyColor: {r: 1, g: 0, b: 1, a: 0}
     - _ChromaKeyRange: {r: 0.06, g: 0.6, b: 0.8, a: 1}
