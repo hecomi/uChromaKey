@@ -1,5 +1,5 @@
-﻿#ifndef CHROMA_KEY_CGINC
-#define CHROMA_KEY_CGINC
+﻿#ifndef CHROMA_KEY_COMMON_CGINC
+#define CHROMA_KEY_COMMON_CGINC
 
 // Refer to the following website regarding conversions between RGB and HSV:
 // https://www.laurivan.com/rgb-to-hsv-to-rgb-for-shaders/
@@ -29,8 +29,8 @@ inline float3 ChromaKeyHSV2RGB(float3 hsv)
 inline float3 ChromaKeyCalcDiffrence(float4 col)
 {
     float3 hsv = ChromaKeyRGB2HSV(col);
-	float3 key = ChromaKeyRGB2HSV(_ChromaKeyColor);
-	return abs(hsv - key);
+    float3 key = ChromaKeyRGB2HSV(_ChromaKeyColor);
+    return abs(hsv - key);
 }
 
 inline float3 ChromaKeyGetRange()
@@ -48,7 +48,7 @@ inline void ChromaKeyApplyAlpha(inout float4 col)
 {
     float3 d = ChromaKeyCalcDiffrence(col);
     if (all(step(0.0, ChromaKeyGetRange() - d))) discard;
-    col.a = saturate(length(d / ChromaKeyGetRange()) - 1.0);
+    col.a *= saturate(length(d / ChromaKeyGetRange()) - 1.0);
 }
 
 #endif
