@@ -1,7 +1,7 @@
 {
     "name": "com.hecomi.uchromakey",
     "version": "1.0.0",
-    "displayName": "uChromakey",
+    "displayName": "uChromaKey",
     "description": "Simple chroma key shaders for Unity",
     "author": {
         "name": "hecomi",
