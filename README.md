@@ -14,11 +14,11 @@ Install
 -------
 
 - Unity Package
-  - Download the latest .unitypackage from [Release page](https://github.com/hecomi/uWintab/releases).
+  - Download the latest .unitypackage from [Release page](https://github.com/hecomi/uChromaKey/releases).
 - Git URL (UPM)
-  - Add `https://github.com/hecomi/uWintab.git#upm` to Package Manager.
+  - Add `https://github.com/hecomi/uChromaKey.git#upm` to Package Manager.
 - Scoped Registry (UPM)
   - Add a scoped registry to your project.
     - URL: `https://registry.npmjs.com`
     - Scope: `com.hecomi`
-  - Install uWintab in Package Manager.
+  - Install uChromaKey in Package Manager.
